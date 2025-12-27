@@ -1,0 +1,214 @@
+{
+  "items": [
+    {
+      "name": "Avocado Sunrise Toast",
+      "description": "Sourdough, smashed avocado, citrus vinaigrette, chili flakes.",
+      "price": 9.5,
+      "category": "Breakfast",
+      "tags": ["vegetarian", "spicy"]
+    },
+    {
+      "name": "Berry Almond Parfait",
+      "description": "Greek yogurt, granola, almond crumble, seasonal berries.",
+      "price": 8.0,
+      "category": "Breakfast",
+      "tags": ["vegetarian", "glutenFree"]
+    },
+    {
+      "name": "Classic Buttermilk Pancakes",
+      "description": "Stack of three with vanilla butter and maple syrup.",
+      "price": 10.0,
+      "category": "Breakfast",
+      "tags": ["vegetarian", "houseFavorite"]
+    },
+    {
+      "name": "Garden Omelet",
+      "description": "Spinach, mushrooms, roasted peppers, goat cheese.",
+      "price": 11.5,
+      "category": "Breakfast",
+      "tags": ["vegetarian", "glutenFree"]
+    },
+    {
+      "name": "Smoked Salmon Bagel",
+      "description": "Everything bagel, herb cream cheese, capers, dill.",
+      "price": 12.5,
+      "category": "Breakfast",
+      "tags": ["houseFavorite"]
+    },
+    {
+      "name": "Sunrise Breakfast Bowl",
+      "description": "Quinoa, roasted sweet potato, kale, poached egg.",
+      "price": 12.0,
+      "category": "Breakfast",
+      "tags": ["glutenFree"]
+    },
+    {
+      "name": "Mediterranean Chicken Salad",
+      "description": "Grilled chicken, olives, cucumbers, feta, lemon vinaigrette.",
+      "price": 14.0,
+      "category": "Lunch",
+      "tags": ["glutenFree"]
+    },
+    {
+      "name": "Roasted Veggie Wrap",
+      "description": "Seasonal vegetables, hummus, spinach tortilla.",
+      "price": 12.0,
+      "category": "Lunch",
+      "tags": ["vegetarian"]
+    },
+    {
+      "name": "Spicy Turkey Panini",
+      "description": "Herb turkey, provolone, chili aioli, arugula.",
+      "price": 13.5,
+      "category": "Lunch",
+      "tags": ["spicy"]
+    },
+    {
+      "name": "Tomato Basil Soup",
+      "description": "Slow-simmered tomatoes with basil oil.",
+      "price": 7.5,
+      "category": "Lunch",
+      "tags": ["vegetarian", "glutenFree"]
+    },
+    {
+      "name": "Truffle Fries",
+      "description": "Crispy fries, parmesan, rosemary truffle salt.",
+      "price": 8.5,
+      "category": "Lunch",
+      "tags": ["vegetarian", "glutenFree"]
+    },
+    {
+      "name": "Wild Mushroom Risotto",
+      "description": "Creamy arborio rice, porcini, parmesan.",
+      "price": 15.0,
+      "category": "Lunch",
+      "tags": ["vegetarian", "glutenFree"]
+    },
+    {
+      "name": "Citrus Herb Salmon",
+      "description": "Seared salmon, orange fennel salad, herb oil.",
+      "price": 22.0,
+      "category": "Dinner",
+      "tags": ["glutenFree", "chefSpecial"]
+    },
+    {
+      "name": "Classic Filet Mignon",
+      "description": "8oz filet, garlic mash, roasted asparagus.",
+      "price": 32.0,
+      "category": "Dinner",
+      "tags": ["houseFavorite", "glutenFree"]
+    },
+    {
+      "name": "Creamy Tuscan Gnocchi",
+      "description": "Sun-dried tomato cream sauce, basil, parmesan.",
+      "price": 19.0,
+      "category": "Dinner",
+      "tags": ["vegetarian"]
+    },
+    {
+      "name": "Firecracker Shrimp Pasta",
+      "description": "Spicy chili butter, shrimp, linguine, herbs.",
+      "price": 21.0,
+      "category": "Dinner",
+      "tags": ["spicy"]
+    },
+    {
+      "name": "Herb Roasted Chicken",
+      "description": "Free-range chicken, lemon thyme jus, veggies.",
+      "price": 20.0,
+      "category": "Dinner",
+      "tags": ["glutenFree"]
+    },
+    {
+      "name": "Lemon Ricotta Ravioli",
+      "description": "House ravioli, brown butter, sage, pecorino.",
+      "price": 18.0,
+      "category": "Dinner",
+      "tags": ["vegetarian", "seasonal"]
+    },
+    {
+      "name": "Citrus Sparkler",
+      "description": "Blood orange, sparkling water, mint.",
+      "price": 6.0,
+      "category": "Drinks",
+      "tags": ["glutenFree", "vegetarian"]
+    },
+    {
+      "name": "Cold Brew Latte",
+      "description": "Slow steeped coffee, vanilla, oat milk.",
+      "price": 5.5,
+      "category": "Drinks",
+      "tags": ["vegetarian", "glutenFree"]
+    },
+    {
+      "name": "Fresh Hibiscus Tea",
+      "description": "House-brewed hibiscus with citrus peel.",
+      "price": 4.5,
+      "category": "Drinks",
+      "tags": ["vegetarian", "glutenFree"]
+    },
+    {
+      "name": "Ginger Lime Spritz",
+      "description": "Ginger syrup, lime, soda, rosemary.",
+      "price": 6.5,
+      "category": "Drinks",
+      "tags": ["glutenFree", "vegetarian"]
+    },
+    {
+      "name": "Golden Turmeric Latte",
+      "description": "Steamed coconut milk, turmeric, honey.",
+      "price": 5.75,
+      "category": "Drinks",
+      "tags": ["vegetarian", "glutenFree"]
+    },
+    {
+      "name": "Seasonal Fruit Agua Fresca",
+      "description": "Chef's fruit blend with a splash of lime.",
+      "price": 5.0,
+      "category": "Drinks",
+      "tags": ["vegetarian", "glutenFree", "seasonal"]
+    },
+    {
+      "name": "Almond Olive Oil Cake",
+      "description": "Orange zest, toasted almonds, honey cream.",
+      "price": 8.0,
+      "category": "Desserts",
+      "tags": ["vegetarian", "glutenFree"]
+    },
+    {
+      "name": "Chocolate Lava Tart",
+      "description": "Warm chocolate center, vanilla bean gelato.",
+      "price": 9.5,
+      "category": "Desserts",
+      "tags": ["vegetarian", "houseFavorite"]
+    },
+    {
+      "name": "Coconut Panna Cotta",
+      "description": "Silky coconut cream with mango coulis.",
+      "price": 8.5,
+      "category": "Desserts",
+      "tags": ["vegetarian", "glutenFree"]
+    },
+    {
+      "name": "Salted Caramel Gelato",
+      "description": "House gelato with caramel drizzle.",
+      "price": 7.0,
+      "category": "Desserts",
+      "tags": ["vegetarian", "glutenFree"]
+    },
+    {
+      "name": "Seasonal Berry Pavlova",
+      "description": "Crisp meringue, whipped cream, berries.",
+      "price": 9.0,
+      "category": "Desserts",
+      "tags": ["vegetarian", "seasonal"]
+    },
+    {
+      "name": "Spiced Churro Bites",
+      "description": "Cinnamon sugar with dark chocolate dip.",
+      "price": 7.5,
+      "category": "Desserts",
+      "tags": ["vegetarian", "spicy"]
+    }
+  ]
+}

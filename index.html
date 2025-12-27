@@ -1,1 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Julia's Restaurant Menu</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="hero">
+    <div class="hero__content">
+      <div class="hero__title">
+        <span class="hero__badge">Since 1998</span>
+        <h1>Julia's Restaurant</h1>
+        <p class="hero__subtitle">Warm flavors. Fresh ingredients. Crafted with love.</p>
+      </div>
+      <div class="hero__actions">
+        <div class="hero__contact">
+          <span class="hero__phone">📞 (555) 123-4567</span>
+          <div class="hero__buttons">
+            <button class="btn btn--outline" type="button">Llamar</button>
+            <button class="btn btn--outline" type="button">Direcciones</button>
+          </div>
+        </div>
+        <button class="btn btn--primary" type="button">Ordena / Contacto</button>
+      </div>
+    </div>
+  </header>
 
+  <main class="page">
+    <section class="controls">
+      <div class="tabs" id="categoryTabs" aria-label="Menu categories"></div>
+
+      <div class="search-filter">
+        <label class="search" for="searchInput">
+          <span>Buscar platillo</span>
+          <input id="searchInput" type="search" placeholder="Ej: Lemon Herb Chicken" />
+        </label>
+
+        <div class="filters">
+          <label class="filter">
+            <input type="checkbox" id="filterSpicy" />
+            Spicy 🌶️
+          </label>
+          <label class="filter">
+            <input type="checkbox" id="filterVegetarian" />
+            Vegetarian 🌿
+          </label>
+          <label class="filter">
+            <input type="checkbox" id="filterGlutenFree" />
+            Gluten-Free
+          </label>
+        </div>
+      </div>
+    </section>
+
+    <section class="menu" id="menuContainer" aria-live="polite"></section>
+
+    <section class="qr">
+      <div>
+        <h2>Scan Menu QR</h2>
+        <p>Point your camera to explore the menu on your phone.</p>
+      </div>
+      <div class="qr__placeholder" aria-label="QR placeholder"></div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__grid">
+      <div>
+        <h3>Hours</h3>
+        <p>Mon - Fri: 7:00 AM - 10:00 PM</p>
+        <p>Sat - Sun: 8:00 AM - 11:00 PM</p>
+      </div>
+      <div>
+        <h3>Follow us</h3>
+        <p>Instagram · Facebook · TikTok</p>
+      </div>
+      <div>
+        <h3>Legal</h3>
+        <p>Prices subject to change.</p>
+      </div>
+    </div>
+  </footer>
+
+  <div class="modal" id="dishModal" aria-hidden="true">
+    <div class="modal__overlay" data-modal-close></div>
+    <div class="modal__content" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button class="modal__close" type="button" data-modal-close aria-label="Close">×</button>
+      <div class="modal__body">
+        <h3 id="modalTitle"></h3>
+        <p id="modalDescription"></p>
+        <div class="modal__meta">
+          <span id="modalPrice"></span>
+          <span id="modalTags"></span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <nav class="bottom-bar" aria-label="Bottom navigation">
+    <button type="button">Home</button>
+    <button type="button">Search</button>
+    <button type="button">Call</button>
+    <button type="button">WhatsApp</button>
+  </nav>
+
+  <script src="app.js" defer></script>
+</body>
+</html>
