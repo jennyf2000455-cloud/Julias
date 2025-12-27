@@ -1,109 +1,79 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Julia's Restaurant Menu</title>
+  <title>Julia's Restaurant</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+  <a id="top"></a>
   <header class="hero">
-    <div class="hero__content">
-      <div class="hero__title">
-        <span class="hero__badge">Since 1998</span>
-        <h1>Julia's Restaurant</h1>
-        <p class="hero__subtitle">Warm flavors. Fresh ingredients. Crafted with love.</p>
-      </div>
-      <div class="hero__actions">
-        <div class="hero__contact">
-          <span class="hero__phone">📞 (555) 123-4567</span>
-          <div class="hero__buttons">
-            <button class="btn btn--outline" type="button">Llamar</button>
-            <button class="btn btn--outline" type="button">Direcciones</button>
-          </div>
-        </div>
-        <button class="btn btn--primary" type="button">Ordena / Contacto</button>
-      </div>
+    <div class="container hero__content">
+      <h1 id="restaurantName" class="hero__title"></h1>
+      <p id="restaurantSubtitle" class="hero__subtitle"></p>
     </div>
   </header>
 
-  <main class="page">
-    <section class="controls">
-      <div class="tabs" id="categoryTabs" aria-label="Menu categories"></div>
+  <main class="container">
+    <section class="section" id="historia">
+      <h2>Nuestra Historia</h2>
+      <div id="historiaContent" class="story"></div>
+    </section>
 
-      <div class="search-filter">
-        <label class="search" for="searchInput">
-          <span>Buscar platillo</span>
-          <input id="searchInput" type="search" placeholder="Ej: Lemon Herb Chicken" />
-        </label>
-
-        <div class="filters">
-          <label class="filter">
-            <input type="checkbox" id="filterSpicy" />
-            Spicy 🌶️
-          </label>
-          <label class="filter">
-            <input type="checkbox" id="filterVegetarian" />
-            Vegetarian 🌿
-          </label>
-          <label class="filter">
-            <input type="checkbox" id="filterGlutenFree" />
-            Gluten-Free
-          </label>
-        </div>
+    <section class="section" id="datos">
+      <h2>Datos Generales</h2>
+      <div class="info-grid">
+        <article class="info-card">
+          <h3>Dirección</h3>
+          <p id="direccion"></p>
+          <p id="ciudadEstado" class="muted"></p>
+        </article>
+        <article class="info-card">
+          <h3>Horarios</h3>
+          <ul id="horarios" class="hours"></ul>
+        </article>
+        <article class="info-card">
+          <h3>Teléfono</h3>
+          <p id="telefono"></p>
+        </article>
       </div>
     </section>
 
-    <section class="menu" id="menuContainer" aria-live="polite"></section>
+    <section class="section" id="menu">
+      <h2 class="center">MENU</h2>
+      <p id="notasMenu" class="menu-note"></p>
+      <div id="menuContent" class="menu"></div>
+    </section>
 
-    <section class="qr">
-      <div>
-        <h2>Scan Menu QR</h2>
-        <p>Point your camera to explore the menu on your phone.</p>
+    <section class="section" id="acciones">
+      <h2>Acciones</h2>
+      <div class="actions">
+        <div class="actions__main">
+          <a id="whatsappButton" class="btn btn--primary" href="#" target="_blank" rel="noopener">WhatsApp</a>
+          <a id="crmButton" class="btn btn--outline" href="#" aria-disabled="true">CRM</a>
+          <div class="btn btn--ghost" aria-hidden="true">Próximamente</div>
+        </div>
+        <div class="actions__qr">
+          <div class="qr-card">
+            <p class="qr-card__title">Asistente IA</p>
+            <img id="qrImage" src="assets/qr.png" alt="QR del asistente IA" />
+            <div id="qrPlaceholder" class="qr-placeholder" aria-hidden="true">QR aquí</div>
+          </div>
+        </div>
+        <div class="actions__future">
+          <p class="muted">Espacio reservado para futuros botones.</p>
+        </div>
       </div>
-      <div class="qr__placeholder" aria-label="QR placeholder"></div>
     </section>
   </main>
 
   <footer class="footer">
-    <div class="footer__grid">
-      <div>
-        <h3>Hours</h3>
-        <p>Mon - Fri: 7:00 AM - 10:00 PM</p>
-        <p>Sat - Sun: 8:00 AM - 11:00 PM</p>
-      </div>
-      <div>
-        <h3>Follow us</h3>
-        <p>Instagram · Facebook · TikTok</p>
-      </div>
-      <div>
-        <h3>Legal</h3>
-        <p>Prices subject to change.</p>
-      </div>
+    <div class="container footer__content">
+      <small>Precios sujetos a cambio. Imágenes solo ilustrativas.</small>
+      <a href="#top">Volver arriba</a>
     </div>
   </footer>
-
-  <div class="modal" id="dishModal" aria-hidden="true">
-    <div class="modal__overlay" data-modal-close></div>
-    <div class="modal__content" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
-      <button class="modal__close" type="button" data-modal-close aria-label="Close">×</button>
-      <div class="modal__body">
-        <h3 id="modalTitle"></h3>
-        <p id="modalDescription"></p>
-        <div class="modal__meta">
-          <span id="modalPrice"></span>
-          <span id="modalTags"></span>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <nav class="bottom-bar" aria-label="Bottom navigation">
-    <button type="button">Home</button>
-    <button type="button">Search</button>
-    <button type="button">Call</button>
-    <button type="button">WhatsApp</button>
-  </nav>
 
   <script src="app.js" defer></script>
 </body>
